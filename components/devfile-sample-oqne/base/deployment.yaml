@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-oqne
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:nmukherj-tenant-devfile-sample-oqne
+      - image: quay.io/redhat-appstudio/user-workload@sha256:8ba30cab4931ab65c31bd9960c1cad410604642c7c4be17645bc236db2f64bb6
         name: my-nodejs
         ports:
         - containerPort: 3001
