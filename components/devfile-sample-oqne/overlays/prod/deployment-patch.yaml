@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-oqne
+  namespace: nmukherj-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:8ba30cab4931ab65c31bd9960c1cad410604642c7c4be17645bc236db2f64bb6
+        name: my-nodejs
+        resources: {}
+status: {}
